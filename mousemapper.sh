@@ -8,7 +8,7 @@ readarray -t devices <<<$(libinput list-devices | grep pointer -B3 | grep -o '/d
 
 # COMMANDS MAP
 BTN_EXTRA=(KEY_LEFTMETA KEY_PAGEUP)
-BTN_SIDE=(KEY_LEFTMETA KEY_PAGEDOWN)
+BTN_SIDE=(BTN_LEFT)
 
 function pressKey(){
     device=$1; key=$2; value=$3
